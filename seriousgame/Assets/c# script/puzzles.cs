@@ -7,7 +7,7 @@ public class puzzles : MonoBehaviour {
     public static int[] colorSwitchRNG = new int[3];
     public static GameObject[] doorPuzzles = new GameObject[3];
 
-    void Awake(){
+    void Start(){
         StartCoroutine(PuzzlesWait());
     }
         

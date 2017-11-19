@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class charactercontroler : MonoBehaviour
-{
+public class charactercontroler : MonoBehaviour{
 
     public static float mouseSensitivityX = 85f;
     public static float mouseSensitivityY = 85f;
@@ -18,11 +18,14 @@ public class charactercontroler : MonoBehaviour
     private GameObject headCamera;
 
     void Awake(){
-        headCamera = this.transform.FindChild("headCamera").gameObject;
+        puzzleCompleteCount = 0;
+        puzzleFailCount = 0;
+    headCamera = this.transform.FindChild("headCamera").gameObject;
         lockHideCursorToGame();
     }
 
     void Update(){
+        endLvl();
         freeCursorEsc();
         rayCastClickCheck();
     }
@@ -99,53 +102,50 @@ public class charactercontroler : MonoBehaviour
 
 
     void rayCastPuzzle(int x, int i, RaycastHit hit){
-        if (hit.collider.gameObject.name == "button1"){//color yellow wins on button 1
+        if (hit.collider.gameObject.name == "button1"){//color yellow wins on left button 
             switch (i){
                 case 0:
-                    print("no winbtn1");
                     puzzleFailCount += 1;
                     break;
                 case 1:
-                    print("winbtn1");
                     lowerDoor(x);
                     break;
                 case 2:
-                    print("no winbtn1");
                     puzzleFailCount += 1;
                     break;
             }
         }
-        else if (hit.collider.gameObject.name == "button2"){//color red wins on button 2
+        else if (hit.collider.gameObject.name == "button2"){//color red wins on middle button 
             switch (i){
                 case 0:
-                    print("winbtn2");
                     lowerDoor(x);
                     break;
                 case 1:
-                    print("no winbtn2");
                     puzzleFailCount += 1;
                     break;
                 case 2:
-                    print("no winbtn2");
                     puzzleFailCount += 1;
                     break;
             }
         }
-        else if (hit.collider.gameObject.name == "button3"){//color white wins on button 3
+        else if (hit.collider.gameObject.name == "button3"){//color white wins on right button 
             switch (i){
                 case 0:
-                    print("no winbtn3");
                     puzzleFailCount += 1;
                     break;
                 case 1:
-                    print("no winbtn3");
                     puzzleFailCount += 1;
                     break;
                 case 2:
-                    print("winbtn3");
                     lowerDoor(x);
                     break;
             }
+        }
+    }
+
+    void endLvl(){
+        if(puzzleFailCount >= 3){
+            SceneManager.LoadScene("lvlComplete");
         }
     }
 

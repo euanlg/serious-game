@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scene/mazelvl.unity
+- path: Assets/scene/lvlComplete.unity
   isLoaded: 1
   isActive: 1
