@@ -78,6 +78,10 @@
     <Compile Include="Assets\c%23 script\charactercontroler.cs" />
     <Compile Include="Assets\c%23 script\prefabSpawn.cs" />
     <Compile Include="Assets\c%23 script\puzzles.cs" />
+    <Compile Include="Assets\c%23 script\retryLvl.cs" />
+    <Compile Include="Assets\c%23 script\scoreDisplay.cs" />
+    <Compile Include="Assets\c%23 script\timer.cs" />
+    <Compile Include="Assets\c%23 script\winTrigger.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
