@@ -21,7 +21,10 @@ public class timer : MonoBehaviour {
         float timeSinceStart = Time.time - startTime;
         string minutes = ((int)timeSinceStart / 60).ToString();
         string seconds = (timeSinceStart % 60).ToString("f2");
-
+        if (minutes == "2"){
+            End();
+            SceneManager.LoadScene("lvlComplete");
+        }
         timedLvl = minutes +":" + seconds;
         timerText.text = minutes + ":" + seconds;
     }
