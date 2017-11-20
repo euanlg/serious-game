@@ -20,11 +20,15 @@ public class charactercontroler : MonoBehaviour{
     void Awake(){
         puzzleCompleteCount = 0;
         puzzleFailCount = 0;
-    headCamera = this.transform.FindChild("headCamera").gameObject;
+        headCamera = this.transform.FindChild("headCamera").gameObject;      
+    }
+
+    void Start(){
         lockHideCursorToGame();
     }
 
     void Update(){
+        lockHideCursorToGame();
         endLvl();
         freeCursorEsc();
         rayCastClickCheck();
@@ -158,7 +162,7 @@ public class charactercontroler : MonoBehaviour{
     }
 
     void lockHideCursorToGame(){
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;   
     }
 
     void freeCursorEsc(){
