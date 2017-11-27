@@ -106,7 +106,7 @@ public class charactercontroler : MonoBehaviour{
 
 
     void rayCastPuzzle(int x, int i, RaycastHit hit){
-        if (hit.collider.gameObject.name == "button1"){//color yellow wins on left button 
+        if (hit.collider.gameObject.name == "button1"){//color yellow wins on button 1 
             switch (i){
                 case 0:
                     puzzleFailCount += 1;
@@ -115,11 +115,17 @@ public class charactercontroler : MonoBehaviour{
                     lowerDoor(x);
                     break;
                 case 2:
+                    puzzleFailCount += 1;
+                    break;
+                case 3:
+                    puzzleFailCount += 1;
+                    break;
+                case 4:
                     puzzleFailCount += 1;
                     break;
             }
         }
-        else if (hit.collider.gameObject.name == "button2"){//color red wins on middle button 
+        else if (hit.collider.gameObject.name == "button2"){//color red and black wins on button 2
             switch (i){
                 case 0:
                     lowerDoor(x);
@@ -128,11 +134,36 @@ public class charactercontroler : MonoBehaviour{
                     puzzleFailCount += 1;
                     break;
                 case 2:
+                    puzzleFailCount += 1;
+                    break;
+                case 3:
+                    puzzleFailCount += 1;
+                    break;
+                case 4:
+                    lowerDoor(x);
+                    break;
+            }
+        }
+        else if (hit.collider.gameObject.name == "button3"){//color white wins on button 3
+            switch (i){
+                case 0:
+                    puzzleFailCount += 1;
+                    break;
+                case 1:
+                    puzzleFailCount += 1;
+                    break;
+                case 2:
+                    lowerDoor(x);
+                    break;
+                case 3:
+                    puzzleFailCount += 1;
+                    break;
+                case 4:
                     puzzleFailCount += 1;
                     break;
             }
         }
-        else if (hit.collider.gameObject.name == "button3"){//color white wins on right button 
+        else if (hit.collider.gameObject.name == "button4"){//color blue wins on button 4
             switch (i){
                 case 0:
                     puzzleFailCount += 1;
@@ -141,7 +172,13 @@ public class charactercontroler : MonoBehaviour{
                     puzzleFailCount += 1;
                     break;
                 case 2:
+                    puzzleFailCount += 1;
+                    break;
+                case 3:
                     lowerDoor(x);
+                    break;
+                case 4:
+                    puzzleFailCount += 1;
                     break;
             }
         }

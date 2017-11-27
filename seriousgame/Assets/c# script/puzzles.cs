@@ -29,8 +29,8 @@ public class puzzles : MonoBehaviour {
         GameObject light;
         light = doorPuzzles[x].transform.FindChild("light").gameObject;
 
-        for (int i = 0; i < 10; i++){
-            colorSwitchRNG[x] = Random.Range(0, 3);
+        for (int i = 0; i < 15; i++){
+            colorSwitchRNG[x] = Random.Range(0, 5);
         }
 
         switch (colorSwitchRNG[x]){
@@ -42,6 +42,12 @@ public class puzzles : MonoBehaviour {
                 break;
             case 2:
                 light.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.white);
+                break;
+            case 3:
+                light.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.blue);
+                break;
+            case 4:
+                light.GetComponent<Renderer>().material.SetColor("_EmissionColor", Color.black);
                 break;
         }
     }

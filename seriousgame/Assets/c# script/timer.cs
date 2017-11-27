@@ -19,14 +19,16 @@ public class timer : MonoBehaviour {
         if (finnished)
             return;
         float timeSinceStart = Time.time - startTime;
-        string minutes = ((int)timeSinceStart / 60).ToString();
-        string seconds = (timeSinceStart % 60).ToString("f2");
-        if (minutes == "2"){
+        float minutes = ((int)timeSinceStart / 60);
+        float seconds = (timeSinceStart % 60);
+        minutes.ToString();
+        seconds.ToString("f2");
+        if (minutes >= 1 ){
             End();
             SceneManager.LoadScene("lvlComplete");
         }
-        timedLvl = minutes +":" + seconds;
-        timerText.text = minutes + ":" + seconds;
+        timedLvl = minutes.ToString() +":" + seconds.ToString(); 
+        timerText.text = minutes.ToString() + ":" + seconds.ToString("f2");
     }
 
     public void End(){
