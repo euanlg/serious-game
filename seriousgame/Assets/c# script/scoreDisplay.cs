@@ -10,6 +10,7 @@ public class scoreDisplay : MonoBehaviour {
     public Text time;
 
     void Start(){
+        Cursor.lockState = CursorLockMode.None;
         fail.text = charactercontroler.puzzleFailCount.ToString();
         complete.text = charactercontroler.puzzleCompleteCount.ToString();
         time.text = timer.timedLvl.ToString();
