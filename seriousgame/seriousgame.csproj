@@ -76,9 +76,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\c%23 script\charactercontroler.cs" />
+    <Compile Include="Assets\c%23 script\lvlselect.cs" />
+    <Compile Include="Assets\c%23 script\mainMenu.cs" />
     <Compile Include="Assets\c%23 script\prefabSpawn.cs" />
     <Compile Include="Assets\c%23 script\puzzles.cs" />
     <Compile Include="Assets\c%23 script\retryLvl.cs" />
+    <Compile Include="Assets\c%23 script\returnLvlSelect.cs" />
     <Compile Include="Assets\c%23 script\scoreDisplay.cs" />
     <Compile Include="Assets\c%23 script\timer.cs" />
     <Compile Include="Assets\c%23 script\winTrigger.cs" />

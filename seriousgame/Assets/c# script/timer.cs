@@ -10,9 +10,11 @@ public class timer : MonoBehaviour {
 	public Text timerText;
     private float startTime;
     private bool finnished = false;
+    private string lvlDif;
 
     void Start(){
         startTime = Time.time;
+        lvlDif = lvlselect.difficultySelect;
     }
 
     void Update(){
@@ -23,12 +25,30 @@ public class timer : MonoBehaviour {
         float seconds = (timeSinceStart % 60);
         minutes.ToString();
         seconds.ToString("f2");
-        if (minutes >= 1 ){
+        if(lvlDif == "Easy"){
+            easylvlTime(minutes,seconds);
+        }
+        else if (lvlDif == "Medium"){
+            mediumlvlTime(minutes,seconds);
+        }
+        
+        timedLvl = minutes.ToString() +":" + seconds.ToString("f2"); 
+        timerText.text = minutes.ToString() + ":" + seconds.ToString("f2");
+    }
+
+    void easylvlTime(float minutes, float seconds){
+        if (minutes >= 1 && seconds >= 30)
+        {
             End();
             SceneManager.LoadScene("lvlComplete");
         }
-        timedLvl = minutes.ToString() +":" + seconds.ToString(); 
-        timerText.text = minutes.ToString() + ":" + seconds.ToString("f2");
+    }
+
+    void mediumlvlTime(float minutes, float seconds){
+        if (minutes >= 1 && seconds >= 45){
+            End();
+            SceneManager.LoadScene("lvlComplete");
+        }
     }
 
     public void End(){
