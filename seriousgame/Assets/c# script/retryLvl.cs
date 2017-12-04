@@ -6,11 +6,10 @@ using UnityEngine.UI;
 
 public class retryLvl : MonoBehaviour {
 
-    public Button yourButton;
+    public Button retryBtn;
 
     void Start(){
-        Button btn = yourButton.GetComponent<Button>();
-        btn.onClick.AddListener(onClick);
+        retryBtn.onClick.AddListener(onClick);
     }
 
     void onClick(){

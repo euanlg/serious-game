@@ -9,6 +9,8 @@ Direct3D:
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\UnityEngine.UI.dll (this message is harmless)
@@ -17,19 +19,39 @@ Platform assembly: C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed
 Loading C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.150 seconds
+Platform assembly: C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.163 seconds
 Platform assembly: C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Euan\Documents\GitHub\serious-game\SGv3_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3762x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.035701 ms
+UnloadTime: 1.124351 ms
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 2ec0 -> priority: 1 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.858428 ms
+  Thread -> id: 4c8 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.255432 ms
 
-Unloading 317 unused Assets to reduce memory usage. Loaded Objects now: 706.
-Total: 0.332653 ms (FindLiveObjects: 0.077823 ms CreateObjectMapping: 0.023698 ms MarkObjects: 0.171154 ms  DeleteObjects: 0.055588 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 285.
+Total: 0.200996 ms (FindLiveObjects: 0.020187 ms CreateObjectMapping: 0.011995 ms MarkObjects: 0.157110 ms  DeleteObjects: 0.007021 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.277942 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 919.
+Total: 0.222354 ms (FindLiveObjects: 0.023113 ms CreateObjectMapping: 0.022235 ms MarkObjects: 0.146578 ms  DeleteObjects: 0.030134 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.464895 ms
+
+Unloading 601 unused Assets to reduce memory usage. Loaded Objects now: 325.
+Total: 0.412818 ms (FindLiveObjects: 0.039789 ms CreateObjectMapping: 0.028379 ms MarkObjects: 0.143652 ms  DeleteObjects: 0.200411 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.355181 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 314.
+Total: 0.175250 ms (FindLiveObjects: 0.014921 ms CreateObjectMapping: 0.010825 ms MarkObjects: 0.145407 ms  DeleteObjects: 0.004095 ms)
 
