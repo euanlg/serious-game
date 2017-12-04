@@ -18,7 +18,6 @@ public class mainMenu : MonoBehaviour {
     }
 
     void onClickStart(){
-
         Age = int.Parse(ageFld.text);
         if(Age >= 14){
             if (nameFld.text == ""){
