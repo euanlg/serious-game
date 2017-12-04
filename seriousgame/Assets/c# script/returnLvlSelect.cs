@@ -13,7 +13,7 @@ public class returnLvlSelect : MonoBehaviour {
     }
 
     void onClick(){
-        SceneManager.LoadScene("lvlselect");
+        SceneManager.LoadScene("mainMenu");
     }
 
 }

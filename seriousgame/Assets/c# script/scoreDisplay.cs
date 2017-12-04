@@ -9,6 +9,11 @@ public class scoreDisplay : MonoBehaviour {
     public Text complete;
     public Text time;
     public Text lvlDif;
+    public string ptime;
+    public string plvlDif;
+    public int pcomplete;
+    public int pfail;
+    public int page;
 
     void Start(){
         Cursor.lockState = CursorLockMode.None;
@@ -16,5 +21,13 @@ public class scoreDisplay : MonoBehaviour {
         complete.text = charactercontroler.puzzleCompleteCount.ToString();
         time.text = timer.timedLvl.ToString();
         lvlDif.text = lvlselect.difficultySelect;
+
+        ptime = timer.timedLvl.ToString();
+        plvlDif = lvlselect.difficultySelect;
+        pcomplete = charactercontroler.puzzleCompleteCount;
+        pfail = charactercontroler.puzzleFailCount;
+        page = mainMenu.Age;
+
+        analytics.analyticUpdate(ptime,plvlDif,pcomplete,pfail,page);
     } 
 }
