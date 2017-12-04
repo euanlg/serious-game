@@ -5,15 +5,16 @@ using UnityEngine.Analytics;
 
 public class analytics : MonoBehaviour {
 
-    public  static void analyticUpdate(string time, string lvlDif, int puzzleWin, int puzzleLose, int Age) {
+    public  static void analyticUpdate(string name, string time, string lvlDif, int puzzleWin, int puzzleLose, int Age) {
 
         Analytics.CustomEvent("end", new Dictionary<string, object>
         {
-            {"timeTaken", time },
-            {"lvlDif", lvlDif},
-            {"puzzlesComplete", puzzleWin},
-            {"puzzlesFailed", puzzleLose},
-            {"playerAge", Age}
+            {"Time Taken", time },
+            {"Level Difficulty", lvlDif},
+            {"Puzzles Complete", puzzleWin},
+            {"Puzzles Failed", puzzleLose},
+            {"Player Age", Age},
+            {"Player Name", name}
         });
     }
 }
